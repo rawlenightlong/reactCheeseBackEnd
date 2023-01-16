@@ -34,8 +34,8 @@ mongoose.connection
 
 const CheeseSchema = new mongoose.Schema({
     name: String,
-    image: String,
-    country: String
+    countryOfOrigin: String,
+    image: String
   })
 
 const Cheeses = mongoose.model("Cheeses", CheeseSchema)
