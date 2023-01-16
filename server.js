@@ -78,7 +78,7 @@ app.put('/cheeses/:id', async (req, res) => {
 })
 
 // DELETE ROUTE
-app.delete("cheeses/:id", async (req, res) => {
+app.delete("/cheeses/:id", async (req, res) => {
     try{
         res.json(await Cheeses.findByIdAndRemove(req.params.id))
     }
