@@ -90,7 +90,7 @@ app.delete("cheeses/:id", async (req, res) => {
 // SHOW ROUTE
 app.get('/cheeses/:id', async (req, res) => {
     try{
-        res.json(await People.findById(req.params.id))
+        res.json(await Cheeses.findById(req.params.id))
     }
     catch(error){
         res.status(400).json(error)
